@@ -2,9 +2,9 @@ public interface Commodity {
 
     String getName();
 
-    String setName();
+    void setName(String name);
 
     int getValue();
 
-    int setValue();
+    void setValue(int value);
 }
