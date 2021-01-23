@@ -1,24 +1,47 @@
-public final class Drink extends Commodity{
+public final class Drink implements Commodity {
+    private String name;
+    private int value;
     private int capacity;
     private String container;
     private Boolean alchol;
 
-    public final String getCapacity(){
+    public final String getName() {
+        return this.name;
+    }
+
+    public final int getValue() {
+        return this.value;
+    }
+
+    public final int getCapacity() {
         return this.capacity;
     }
-    public final int getContainer(){
+
+    public final String getContainer() {
         return this.container;
     }
-    public final boolean alchol(){
-    return this.alchol;
+
+    public final boolean getAlchol() {
+        return this.alchol;
     }
-    public final int setCapacity(int capacity){
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public final void setValue(int value) {
+        this.value = value;
+    }
+
+    public final void setCapacity(int capacity) {
         this.capacity = capacity;
     }
-    public final String setContainer(String container){
+
+    public final void setContainer(String container) {
         this.container = container;
     }
-    public boolean setAlchol(boolean alchol){
+
+    public final void setAlchol(boolean alchol) {
         this.alchol = alchol;
     }
 
