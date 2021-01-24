@@ -1,13 +1,15 @@
 public final class Drink implements Commodity {
     private String name;
     private int value;
+    private int id;
     private int capacity;
     private String container;
     private Boolean alchol;
 
-    public Drink(String name, int value, int capacity, String container, Boolean alchol) {
+    public Drink(String name, int value, int id, int capacity, String container, Boolean alchol) {
         this.name = name;
         this.value = value;
+        this.id = id;
         this.capacity = capacity;
         this.container = container;
         this.alchol = alchol;
