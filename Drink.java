@@ -5,6 +5,14 @@ public final class Drink implements Commodity {
     private String container;
     private Boolean alchol;
 
+    public Drink(String name, int value, int capacity, String container, Boolean alchol) {
+        this.name = name;
+        this.value = value;
+        this.capacity = capacity;
+        this.container = container;
+        this.alchol = alchol;
+    }
+
     public final String getName() {
         return this.name;
     }
@@ -25,24 +33,24 @@ public final class Drink implements Commodity {
         return this.alchol;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    // public void setName(String name) {
+    // this.name = name;
+    // }
 
-    public final void setValue(int value) {
-        this.value = value;
-    }
+    // public final void setValue(int value) {
+    // this.value = value;
+    // }
 
-    public final void setCapacity(int capacity) {
-        this.capacity = capacity;
-    }
+    // public final void setCapacity(int capacity) {
+    // this.capacity = capacity;
+    // }
 
-    public final void setContainer(String container) {
-        this.container = container;
-    }
+    // public final void setContainer(String container) {
+    // this.container = container;
+    // }
 
-    public final void setAlchol(boolean alchol) {
-        this.alchol = alchol;
-    }
+    // public final void setAlchol(boolean alchol) {
+    // this.alchol = alchol;
+    // }
 
 }
