@@ -15,4 +15,23 @@ public class Logic {
             System.out.println(drink.getName());
         }
     }
+
+    public boolean canBuy(int currentMoney, int minPrice) {
+        if (currentMoney >= minPrice) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public int minPrice(ArrayList<Drink> ary) {
+        int temp = ary.get(0).getValue();
+        for (Drink drink : ary) {
+            if (drink.getValue() < temp) {
+                temp = drink.getValue();
+                // System.out.println(temp);
+            }
+        }
+        return temp;
+    }
 }

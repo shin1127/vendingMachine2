@@ -23,6 +23,10 @@ public final class Drink implements Commodity {
         return this.value;
     }
 
+    public final int getId() {
+        return this.id;
+    }
+
     public final int getCapacity() {
         return this.capacity;
     }
