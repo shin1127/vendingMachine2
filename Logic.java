@@ -12,6 +12,7 @@ public class Logic {
 
     public void showObj(ArrayList<Drink> ary) {
         for (Drink drink : ary) {
+            System.out.print(drink.getId() + " ");
             System.out.println(drink.getName());
         }
     }
@@ -33,5 +34,17 @@ public class Logic {
             }
         }
         return temp;
+    }
+
+    // process about buying
+    public int buyCommodity(int currentMoney, ArrayList<Drink> ary) {
+
+        Scanner sc1 = new Scanner(System.in);
+        System.out.print("select number > ");
+        int id = sc1.nextInt();
+        // int id = 1;
+        sc1.close();
+        currentMoney = currentMoney - ary.get(id).getValue();
+        return currentMoney;
     }
 }
