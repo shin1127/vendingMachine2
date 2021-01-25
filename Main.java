@@ -21,7 +21,7 @@ public class Main {
 
         // drinkList.add(coke, coffee);
 
-        logic.showObj(drinkList);
+        // logic.showObj(drinkList);
 
         currentMoney = logic.inputMoney();
         System.out.println("current money is " + currentMoney);
@@ -37,6 +37,6 @@ public class Main {
 
         currentMoney = logic.buyCommodity(currentMoney, drinkList);
 
-        System.out.println(currentMoney);
+        logic.showCurrentMoney(currentMoney);
     }
 }

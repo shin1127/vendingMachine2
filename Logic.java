@@ -6,7 +6,7 @@ public class Logic {
         Scanner sc = new Scanner(System.in);
         System.out.print("input money > ");
         int input = sc.nextInt();
-        sc.close();
+        // sc.close();
         return input;
     }
 
@@ -43,8 +43,12 @@ public class Logic {
         System.out.print("select number > ");
         int id = sc1.nextInt();
         // int id = 1;
-        sc1.close();
         currentMoney = currentMoney - ary.get(id).getValue();
+        System.out.println("you bought a " + ary.get(id).getName() + ".");
         return currentMoney;
+    }
+
+    public void showCurrentMoney(int currentMoney) {
+        System.out.println("current money is " + currentMoney);
     }
 }
