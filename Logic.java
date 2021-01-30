@@ -51,4 +51,17 @@ public class Logic {
     public void showCurrentMoney(int currentMoney) {
         System.out.println("current money is " + currentMoney);
     }
+
+    public boolean decideContinue() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Do you continue buying? Y or N");
+        String yn = sc.nextLine();
+        if (yn == "Y" || yn == "y") {
+            return true;
+        } else if (yn == "N" || yn == "n") {
+            return false;
+        } else {
+            return false;
+        }
+    }
 }
