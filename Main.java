@@ -3,11 +3,10 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("hello world!");
         int currentMoney;
-        // Drink coke = new Drink();
-
         Logic logic = new Logic();
+
+        // メニューリストを準備
         ArrayList<Drink> drinkList = new ArrayList<>();
 
         Drink coke = new Drink("coke", 120, 0, 500, "PET", false);
@@ -38,5 +37,7 @@ public class Main {
         currentMoney = logic.buyCommodity(currentMoney, drinkList);
 
         logic.showCurrentMoney(currentMoney);
+
+        // decideContinue();
     }
 }

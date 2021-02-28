@@ -13,7 +13,8 @@ public class Logic {
     public void showObj(ArrayList<Drink> ary) {
         for (Drink drink : ary) {
             System.out.print(drink.getId() + " ");
-            System.out.println(drink.getName());
+            System.out.print(drink.getName() + " ");
+            System.out.println(drink.getValue());
         }
     }
 
